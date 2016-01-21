@@ -14,8 +14,7 @@ app.home = kendo.observable({
         fields: {
             pushChannel: '',
         },
-        submit: function() {},
-        cancel: function() {}
+        submit: function() {}
     });
 
     parent.set('homeModel', homeModel);
@@ -36,7 +35,7 @@ app.home.homeModel.submit = function() {
             alert: 'true'
         },
         android: {
-            projectNumber: '1031548959974'
+            projectNumber: 'ANDROID_PROJECT_NUMBER'
         },
         wp8: {
             channelName: 'EverlivePushChannel'
@@ -55,7 +54,7 @@ app.home.homeModel.submit = function() {
 }
 
 app.pushProvider = new Everlive({
-    appId: "8855oec8jnwd2gvi",
+    appId: "YOUR_API_KEY",
     scheme: "https"
 });
 
